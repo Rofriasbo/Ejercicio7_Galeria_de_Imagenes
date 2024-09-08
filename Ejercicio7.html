@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+     
+    </style>
+</head>
+<link rel="stylesheet" href="Ejercicio7.css" />
+<body>
+
+    <div class="gallery-container">
+        <img id="mainImage" src="https://media.admagazine.com/photos/65a0150aa3dce2836c2d8566/16:9/w_2560%2Cc_limit/arquitectura-japonesa.jpg"
+         alt="Main Image" class="main-image">
+
+        <div class="thumbnails">
+            <div class="thumbnail">
+                <img src="https://www.shutterstock.com/image-photo/yasaka-pagoda-kyoto-japan-during-600nw-2409679871.jpg" 
+                alt="Thumbnail 1" onclick="changeImage('image1.jpg')">
+            </div>
+            <div class="thumbnail">
+                <img src="https://www.shutterstock.com/image-photo/torii-gate-itsukushima-shrine-miyajima-260nw-1806697834.jpg"
+                 alt="Thumbnail 2" onclick="changeImage('image2.jpg')">
+            </div>
+            <div class="thumbnail">
+                <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/de/5d/b6.jpg"Thumbnail 3" onclick="changeImage('image3.jpg')">
+            </div>
+            <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfssTbVWWzbVWDFKeCHjJPYPE71VfatMg4NA&s"
+                 alt="Thumbnail 4" onclick="changeImage('image4.jpg')">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("mainImage").src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
